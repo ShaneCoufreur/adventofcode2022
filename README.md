@@ -1,5 +1,5 @@
-# adventofcode2021
-Advent of Code 2021
+# adventofcode2022
+Advent of Code 2022
 
 ![](https://img.shields.io/badge/day%20📅-1-blue)
 
