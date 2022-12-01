@@ -19,12 +19,9 @@ with open((__file__.rstrip("code.py")+"input.txt"), 'r') as input_file:
     #print(elfs)
 
 def solve1():
-    max = 0
-    for value in elfs:
-        s = sum(value)
-        if s > max:
-            max = s
-    return max
+    sorted = [sum(value) for value in elfs]
+    sorted.sort()
+    return sorted[-1:][0]
 
 def solve2():
     sorted = [sum(value) for value in elfs]
