@@ -15,6 +15,8 @@ win = 6
 
 def solve1():
     #print(input)
+    # A = Rock, B = Paper, C = Scissors
+    # X = Rock, Y = Paper, Z = Scissors
     draws = dict()
     draws[("A", "X")] = rock + draw
     draws[("A", "Y")] = paper + win
@@ -33,6 +35,8 @@ def solve1():
     return sum
     
 def solve2():
+    # A = Rock, B = Paper, C = Scissors
+    # X = loss, Y = draw, Z = Win
     draws = dict()
     draws[("A", "X")] = loss + scissors
     draws[("A", "Y")] = draw + rock
