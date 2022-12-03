@@ -1,7 +1,7 @@
 # adventofcode2022
 Advent of Code 2022
 
-![](https://img.shields.io/badge/day%20📅-2-blue)
+![](https://img.shields.io/badge/day%20📅-3-blue)
 
 ![](https://img.shields.io/badge/stars%20⭐-4-yellow)
 
