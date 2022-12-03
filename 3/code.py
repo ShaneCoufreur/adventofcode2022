@@ -15,12 +15,8 @@ priorities += list(string.ascii_lowercase) + list(string.ascii_uppercase)
 def solve1():
     matches = []
     for l in input:
-        p1, p2 = l[:len(l)//2], l[len(l)//2:]
-
-        for c in p1:
-            if c in p2:
-                matches.append(c)
-                break
+        p1, p2 = set(l[:len(l)//2]), set(l[len(l)//2:])
+        matches.append( list(p1.intersection(p2))[0] )
 
     return sum([priorities.index(m) for m in matches])
     
@@ -28,10 +24,9 @@ def solve2():
     matches = []
     grouplength = 3
     for g in range(len(input)//grouplength):
-        for c in input[0+g*grouplength]:
-            if c in input[1+g*grouplength] and c in input[2+g*grouplength]:
-                matches.append(c)
-                break
+        p1, p2, p3 = set(input[0+g*grouplength]), set(input[1+g*grouplength]), set(input[2+g*grouplength])
+
+        matches.append( list(p1.intersection(p2, p3))[0] )
             
     return sum([priorities.index(m) for m in matches])
 
