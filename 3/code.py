@@ -25,9 +25,8 @@ def solve2():
     matches = []
     grouplength = 3
     for g in range(len(input)//grouplength):
-        p1, p2, p3 = set(input[0+g*grouplength]), set(input[1+g*grouplength]), set(input[2+g*grouplength])
-
-        matches += p1.intersection(p2, p3).pop()
+        p = list(map(lambda x: set(x), input[0+g*grouplength:grouplength+g*grouplength]))
+        matches += p[0].intersection(*p[1:])
             
     return sum([priorities.index(m) for m in matches])
 
