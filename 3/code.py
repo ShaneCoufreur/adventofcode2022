@@ -16,7 +16,8 @@ def solve1():
     matches = []
     for l in input:
         p1, p2 = set(l[:len(l)//2]), set(l[len(l)//2:])
-        matches.append( list(p1.intersection(p2))[0] )
+
+        matches += p1.intersection(p2).pop()
 
     return sum([priorities.index(m) for m in matches])
     
@@ -26,7 +27,7 @@ def solve2():
     for g in range(len(input)//grouplength):
         p1, p2, p3 = set(input[0+g*grouplength]), set(input[1+g*grouplength]), set(input[2+g*grouplength])
 
-        matches.append( list(p1.intersection(p2, p3))[0] )
+        matches += p1.intersection(p2, p3).pop()
             
     return sum([priorities.index(m) for m in matches])
 
