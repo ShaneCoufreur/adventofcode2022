@@ -4,8 +4,8 @@
 
 import string
 
-with open((__file__.rstrip("code.py")+"input.txt"), 'r') as input_file:
-    input = [l.strip() for l in input_file.readlines()]
+#with open((__file__.rstrip("code.py")+"input.txt"), 'r') as input_file:
+#    input = [l.strip() for l in input_file.readlines()]
 
 priorities = list(" ")
 priorities += list(string.ascii_lowercase) + list(string.ascii_uppercase)
@@ -35,5 +35,12 @@ def solve2():
             
     return sum([priorities.index(m) for m in matches])
 
+with open((__file__.rstrip("code.py")+"testinput.txt"), 'r') as input_file:
+    input = [l.strip() for l in input_file.readlines()]
+print("Part One : "+ str(solve1()))
+print("Part Two : "+ str(solve2()))
+
+with open((__file__.rstrip("code.py")+"input.txt"), 'r') as input_file:
+    input = [l.strip() for l in input_file.readlines()]
 print("Part One : "+ str(solve1()))
 print("Part Two : "+ str(solve2()))

@@ -2,9 +2,6 @@
 # Author = Shane Coufreur
 # Date = December 2022
 
-with open((__file__.rstrip("code.py")+"input.txt"), 'r') as input_file:
-    input = [l.strip().split(" ") for l in input_file.readlines()]
-
 rock = 1
 paper = 2
 scissors = 3
@@ -54,5 +51,12 @@ def solve2():
 
     return sum
 
+with open((__file__.rstrip("code.py")+"testinput.txt"), 'r') as input_file:
+    input = [l.strip() for l in input_file.readlines()]
+print("Part One : "+ str(solve1()))
+print("Part Two : "+ str(solve2()))
+
+with open((__file__.rstrip("code.py")+"input.txt"), 'r') as input_file:
+    input = [l.strip() for l in input_file.readlines()]
 print("Part One : "+ str(solve1()))
 print("Part Two : "+ str(solve2()))
