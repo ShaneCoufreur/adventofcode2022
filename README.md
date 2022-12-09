@@ -1,11 +1,11 @@
 # adventofcode2022
 Advent of Code 2022
 
-![](https://img.shields.io/badge/day%20📅-7-blue)
+![](https://img.shields.io/badge/day%20📅-9-blue)
 
-![](https://img.shields.io/badge/stars%20⭐-14-yellow)
+![](https://img.shields.io/badge/stars%20⭐-16-yellow)
 
-![](https://img.shields.io/badge/days%20completed-7-red)
+![](https://img.shields.io/badge/days%20completed-8-red)
 
 <!--- advent_readme_stars table --->
 ## 2022 Results
@@ -19,4 +19,5 @@ Advent of Code 2022
 | [Day 5](https://adventofcode.com/2022/day/5) | ⭐ | ⭐ |
 | [Day 6](https://adventofcode.com/2022/day/6) | ⭐ | ⭐ |
 | [Day 7](https://adventofcode.com/2022/day/7) | ⭐ | ⭐ |
+| [Day 8](https://adventofcode.com/2022/day/8) | ⭐ | ⭐ |
 <!--- advent_readme_stars table --->
